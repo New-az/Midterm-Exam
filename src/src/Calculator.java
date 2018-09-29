@@ -1,13 +1,15 @@
 package src;
+import java.util.ArrayList;
 
 public class Calculator {
 
-	public static double sumNumber(double ... x) {
-		int sum = 0;
+	public static ArrayList<Double> createList(double ... x) {
+		ArrayList<Double> y = new ArrayList<Double>();
 		for(double i : x) {
-			sum += i;
+			y.add(i);
 		}
-		return sum;
-		
+		return y;
 	}
+	
+	
 }
